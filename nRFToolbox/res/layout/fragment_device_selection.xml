@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2013 Nordic Semiconductor. All Rights Reserved.
+  
+  The information contained herein is property of Nordic Semiconductor ASA.
+  Terms and conditions of usage are described in detail in NORDIC SEMICONDUCTOR STANDARD SOFTWARE LICENSE AGREEMENT.
+  Licensees are granted free, non-transferable use of the information. NO WARRANTY of ANY KIND is provided. 
+  This heading must NOT be removed from the file.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6E7E8" >    
+	     
+	<ListView 
+	    android:id="@+id/listViewScanner"
+	    android:layout_width="fill_parent"
+	    android:layout_height="300dp"	    
+	/>  
+	<no.nordicsemi.android.nrftoolbox.widget.TrebuchetTextView
+        android:id="@+id/empty"        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:text="@string/no_sensor_found"
+        android:gravity="center_vertical|center_horizontal"        
+        />      
+
+ 	<Button android:id="@+id/buttonCancel"
+		android:text="@string/dfu_button_label_cancel"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>    
+
+</LinearLayout>
